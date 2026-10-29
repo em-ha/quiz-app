@@ -17,3 +17,8 @@ a {
 .a-active {
   background-color: var(--nav-active);
 }
+
+img {
+  width: 40px;
+  height: 40px;
+}

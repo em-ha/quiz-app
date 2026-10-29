@@ -26,3 +26,19 @@ section {
   margin: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  margin: 16px 0 0 0;
+}
+
+.tag {
+  background-color: var(--nav-active);
+  color: var(--text);
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+}
