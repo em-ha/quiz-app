@@ -63,7 +63,13 @@ section {
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: var(--primary);
     padding: 18px;
+}
+
+a {
 
 }
