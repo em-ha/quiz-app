@@ -37,7 +37,7 @@
   margin-top: 0;
 }
 
-.tags {
+.card__tags {
   display: flex;
   justify-content: flex-start;
   gap: 8px;
@@ -45,7 +45,7 @@
   margin: 16px 0 0 0;
 }
 
-.tag {
+.card__tag {
   background-color: var(--nav-active);
   color: var(--text);
   padding: 5px 12px;
