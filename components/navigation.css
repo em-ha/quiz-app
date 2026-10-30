@@ -1,4 +1,4 @@
-nav {
+.navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -10,11 +10,11 @@ nav {
   height: 72px;
 }
 
-a {
+.navigation__link {
   padding: 16px;
 }
 
-.a-active {
+.navigation__link--active {
   background-color: var(--nav-active);
 }
 
