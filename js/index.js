@@ -10,3 +10,17 @@ bookmark.addEventListener("click", (event) => {
     }
 
 });
+
+const answerButton = document.querySelector('[data-js="answer-button"]');
+const answerText = document.querySelector('[data-js="answer-text"]');
+
+answerButton.addEventListener("click", (event) => {
+    if (answerText.hidden) {
+        answerText.hidden = false;
+        answerButton.textContent = "Hide answer";
+    } else {
+        answerText.hidden = true;
+        answerButton.textContent = "Show answer";
+    }
+
+})''
