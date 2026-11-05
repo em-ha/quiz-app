@@ -2,7 +2,7 @@ console.clear();
 
 const bookmark = document.querySelector('[data-js="bookmark"]');
 
-bookmark.addEventListener("click", (event) => {
+bookmark.addEventListener("click", () => {
     if (bookmark.getAttribute("src") === "./assets/bookmark_filled.svg") {
         bookmark.setAttribute("src", "./assets/bookmark.svg");
     } else {
@@ -14,7 +14,7 @@ bookmark.addEventListener("click", (event) => {
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const answerText = document.querySelector('[data-js="answer-text"]');
 
-answerButton.addEventListener("click", (event) => {
+answerButton.addEventListener("click", () => {
     if (answerText.hidden) {
         answerText.hidden = false;
         answerButton.textContent = "Hide answer";
@@ -23,4 +23,4 @@ answerButton.addEventListener("click", (event) => {
         answerButton.textContent = "Show answer";
     }
 
-})''
+});
