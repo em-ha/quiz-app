@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App: Homepage</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     
     <h1>The Internet Quiz</h1>
   
     <section class="card">
-      <button class="card__bookmark">★</button>
+      <img 
+      class="card__bookmark"
+      src="./assets/bookmark.svg"
+      alt="bookmark"
+      data-js="bookmark"
+      >
       <h2 class="card__question">What does the acronym "WWW" stand for?</h2>
       <p class="card__answer" hidden>World Wide Web</p>
       <button class="card__answer-button">Show Answer</button>
@@ -23,7 +29,11 @@
     </section>
 
      <section class="card">
-      <button class="card__bookmark">★</button>
+      <img 
+      class="card__bookmark"
+      src="./assets/bookmark_filled.svg"
+      alt="bookmark"
+      >
       <h2 class="card__question">What does the acronym "WWW" stand for?</h2>
       <p class="card__answer">World Wide Web</p>
       <button class="card__answer-button">Hide answer</button>
