@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App: Form</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/form.js" defer></script>
   </head>
   <body>
     
     <h1>The Internet Quiz</h1>
   
     <section class="card">
+        <form>
+            <fieldset>
+                <legend>Form title</legend>
+                <label for="question-label">Your question</label>
+                <textarea name="question-text" 
+                id="question-text" 
+                rows="10" 
+                cols="50" 
+                placeholder="Please type your quiz question"></textarea>
+                <label for="answer">Your answer</label>
+                <textarea name="answer-text" 
+                id="answer-text" 
+                rows="10" 
+                cols="50" 
+                placeholder="Please type your quiz answer"></textarea>
+                <label for="tag-label">Tag</label>
+                <input type="text"
+                name="tag-text" 
+                id="tag-text" 
+                placeholder="tag"></input>
+                <button class="card__answer-button">Submit</button>
+        </fieldset>
+    </form>
       
     </section>
 
