@@ -15,6 +15,10 @@ form.addEventListener("submit", (event) => {
 
     const card = document.createElement("section");
     card.classList.add("card");
+
+    const bookmark = document.createElement("img");
+    bookmark.classList.add("card__bookmark");
+    bookmark.src = "./assets/bookmark.svg";
     
     const h2 = document.createElement("h2");
     h2.classList.add("card__question");
@@ -26,12 +30,14 @@ form.addEventListener("submit", (event) => {
 
     const button = document.createElement("button");
     button.classList.add("card__answer-button");
-    button.textContent = formData.tag;
+    button.textContent = "Hide answer"
 
+    card.append(bookmark);
     card.append(h2);
     card.append(p);
     card.append(button);
-    form.append(card);
+    // form.append(card); //
+    form.parentElement.after(card);
 
 })
 
